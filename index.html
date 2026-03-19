@@ -1,33 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lampu43 🔥</title>
 
 <style>
 body {
-  margin: 0;
   background: black;
   color: white;
-  font-family: Arial;
   text-align: center;
+  font-family: Arial;
+  margin: 0;
 }
 
-/* HEADER */
-.header {
-  padding: 10px;
-  font-size: 22px;
-  font-weight: bold;
+/* JUDUL */
+h1 {
+  margin-top: 20px;
+  font-size: 30px;
 }
 
-/* BANNER */
-.banner {
+/* GAMBAR */
+img {
   width: 100%;
-  display: block;
+  border-radius: 10px;
+}
+
+/* TEXT BESAR */
+.title {
+  font-size: 20px;
+  color: lime;
+  margin: 15px;
 }
 
 /* BUTTON */
 .btn {
-  background: linear-gradient(red, orange);
+  background: linear-gradient(45deg, orange, red);
   padding: 15px;
-  margin
+  margin: 10px;
+  display: block;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  animation: gerak 1.5s infinite alternate;
+}
+
+/* ANIMASI BUTTON */
+@keyframes gerak {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+/* TEXT BAWAH */
+.desc {
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* MENU BAWAH */
+.menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>LAMPU43</h1>
+
+<div class="title">
+SEMUA GAME MEMBAWA KEBERUNTUNGAN
+</div>
+
+<!-- GANTI LINK GAMBAR DI SINI -->
+<img src="https://i.imgur.com/yourimage.jpg">
+
+<a class="btn" href="https://google.com">Login Lampu43</a>
+<a class="btn" href="https://google.com">Daftar Lampu43</a>
+
+<h2>Lampu43</h2>
+
+<div class="desc">
+Lampu43 menawarkan pengalaman game online dengan akses super cepat dan stabil.
+Cocok untuk kamu yang ingin bermain tanpa hambatan di berbagai perangkat.
+</div>
+
+<!-- MENU BAWAH -->
+<div class="menu">
+  <a href="#">Home</a>
+  <a href="#">Apps</a>
+  <a href="#">Daftar</a>
+  <a href="#">Livechat</a>
+</div>
+
+</body>
+</html>
